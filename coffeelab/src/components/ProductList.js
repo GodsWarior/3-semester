@@ -8,7 +8,6 @@ class ProductList extends Component {
       <section className="product-list">
         <h2>Популярное меню</h2>
         <div className="products-container">
-          {/* Передаем каждый элемент массива в ProductCard через props */}
           {productsData.map(product => (
             <ProductCard key={product.id} product={product} />
           ))}
